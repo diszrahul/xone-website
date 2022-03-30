@@ -1,4 +1,5 @@
-import Head from 'next/head'
+import Head from 'next/head';
+import Link from "next/link";
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -25,28 +26,13 @@ export default function Home() {
             <p>Join our community on slack channel to learn and grow with us</p>
           </a>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Blog &rarr;</h2>
-            <p>Read our awesome curated content </p>
-          </a>
+          <Link href={"blog/"}>
+            <a className={styles.card}>
+              <h2>Blog &rarr;</h2>
+              <p>Read our awesome list of curated content for the devs and by the devs</p>
+            </a>
+          </Link>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
         </div>
       </main>
     </div>
