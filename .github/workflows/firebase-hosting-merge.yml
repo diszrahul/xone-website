@@ -19,9 +19,6 @@ jobs:
 
     - name: Build and export the next app
       run: sudo npm run export 
-    
-    - name: Perform postbuild actions
-      run: sudo npm run postbuild
 
     # Runs a single command using the runners shell
     - name: Firebase Deploy
