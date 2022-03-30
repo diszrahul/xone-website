@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 
-export const getServerSideProps = async () => {
+export const getStaticProps = async () => {
   const query = encodeURIComponent(
     `*[ _type == "post" ]`
   );

@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import styles from '../../styles/Home.module.css'
 
 const Footer = () => {
@@ -11,7 +10,7 @@ const Footer = () => {
         >
           Powered by{' '}
           <span className={styles.logo}>
-            <Image src="/xebia.png" alt="Xebia Logo" width={72} height={16} />
+            <img src="/xebia.png" alt="Xebia Logo" width={72} height={16} />
           </span>
         </a>
       </footer> );
